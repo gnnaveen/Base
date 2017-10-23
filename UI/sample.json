@@ -1,0 +1,32 @@
+{
+    "Dropdowns" :[
+        {
+            "name":"item",
+            "values":
+            [
+                {"key":"itemname","value":"123"}
+            ]
+
+
+        },
+        {
+            "name":"measurement",
+            "values":
+            [
+                {"key":"measure","value":"123"}
+            ]
+
+
+        },
+        {
+            "name" : "price",
+            "values":[
+                [
+                    {"key":"priceval", "value":""}
+                ]
+            ]
+        }
+    ]
+
+    
+}
