@@ -6,14 +6,14 @@ var SOURCE_PATH = path.resolve( __dirname, 'src' );
 module.exports = {
    entry: SOURCE_PATH + '/app/main.js',
    output: {
-       path: DIST_PATH,   
+       path: path.join(__dirname,DIST_PATH),   
        filename: 'app.dist.js',
        publicPath: '/app/'
    },  
    module: {
        loaders: [
            {
-               test: /.jsx?$/,  
+               test: /.js?$/,  
                loader: 'babel-loader',
                exclude: /node_modules/,
                query: {

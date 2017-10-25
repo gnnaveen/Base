@@ -6,14 +6,16 @@
   "scripts": {
     "babel": "babel",
     "webpack": "webpack",
-    "build": "webpack -d && copy /Y src\\app\\index.html dist\\index.html && webpack-dev-server --hot --inline --colors --progress --content-base src",
+    "build": "webpack -d && cp ./src/index.html ./dist/ && webpack-dev-server --hot --inline --colors --progress --content-base dist",
     "build-prod": "webpack -p && copy /Y src\\app\\index.html dist\\index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
